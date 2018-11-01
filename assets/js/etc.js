@@ -1091,7 +1091,7 @@ let amount = $('#purchase-amount').val().trim();
   })
 
   $('#export-private-key').click(function (e) {
-    e.preventDefault()
+    e.preventDefault() 
 
     useWallet(function (pwDerivedKey) {
       var key = keystore.exportPrivateKey(currentAddress, pwDerivedKey)
